@@ -1,0 +1,31 @@
+.btn {
+    display: block;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    width: 48px;
+    height: 48px;
+
+    outline: none;
+    border: none;
+    
+    cursor: pointer;
+
+    border-radius: 15px;
+
+    background: var(--grey);
+
+
+    user-select: none;
+
+    transition: .3s;
+}
+
+
+.btn:hover {
+    transform: translateY(-3px);
+}

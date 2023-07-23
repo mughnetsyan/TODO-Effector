@@ -1,0 +1,11 @@
+@import url(./styles/normalize.css);
+@import url(./styles/variables.css);
+
+body {
+    width: 100%;
+    height: 100vh;
+
+    box-sizing: border-box;
+
+    background: var(--grey);
+}

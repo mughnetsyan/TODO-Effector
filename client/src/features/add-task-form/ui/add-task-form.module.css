@@ -1,0 +1,49 @@
+.form {
+    display: flex;
+}
+
+.input, .btn {
+    background: var(--turquoise);
+
+    outline: none;
+    
+    border: none;
+    border-radius: 10px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 24px;
+
+    color: var(--violet);
+
+    padding: 8px 16px;
+}
+
+.input {
+    margin-right: 16px;
+}
+
+.input::placeholder {
+    color: var(--violet-80);
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    user-select: none;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.img {
+    margin-right: 8px;
+}

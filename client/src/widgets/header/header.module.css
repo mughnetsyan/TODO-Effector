@@ -1,0 +1,30 @@
+.header {
+    position: fixed;
+    top: 0;
+
+    width: 100%;
+    height: 100px;
+
+    background: var(--violet);
+    
+    z-index: 2;
+}
+
+.container {
+    width: inherit;
+    height: inherit;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+
+    color: #FFFFFF;
+}
+

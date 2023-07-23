@@ -1,0 +1,22 @@
+.tasks {
+    margin-top: 132px;
+}
+
+.title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+
+    color: var(--black-1);
+    
+    margin-bottom: 16px;
+}
+
+.list { 
+    padding: 32px;
+
+    background: var(--white);
+
+    border-radius: 20px;
+}
