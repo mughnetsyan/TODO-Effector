@@ -1,3 +1,6 @@
+import { memo } from 'react'
+
+import { taskToggled } from 'entities/task';
 import styles from './task-checkbox.module.css'
 
 import checkImg from 'shared/assets/images/Vector-3.svg'
@@ -10,9 +13,9 @@ interface Props {
 }
 
 
-export const TaskCheckbox = ({id, completed}: Props) => {
+export const TaskCheckbox = memo(({id, completed}: Props) => {
     function checkHandler() {
-        
+        taskToggled({id})
     }
 
     return (
@@ -25,4 +28,4 @@ export const TaskCheckbox = ({id, completed}: Props) => {
             </label>
         </div>
     )
-}
+})

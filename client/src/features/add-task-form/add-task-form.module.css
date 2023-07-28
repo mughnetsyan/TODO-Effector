@@ -40,10 +40,12 @@
     transition: .3s;
 }
 
-.btn:hover {
-    transform: translateY(-3px);
-}
-
 .img {
     margin-right: 8px;
+} 
+
+@media(hover: hover) {
+    .btn:hover {
+        transform: translateY(-3px);
+    }
 }

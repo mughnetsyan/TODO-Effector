@@ -26,6 +26,14 @@
     color: var(--violet);
 }
 
-.btn:hover {
+@media(hover: hover) {
+    .btn:hover {
+        background: var(--white);
+        transform: translateY(-3px);
+    }
+}
+
+.btn:focus-visible {
+    background: var(--white);
     transform: translateY(-3px);
 }

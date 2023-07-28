@@ -1,31 +1,36 @@
-import { useList } from "effector-react"
+import { useUnit } from "effector-react"
 
-import { Task } from "entities/task"
-import { $tasks } from 'entities/task'
+import { Pagination } from "features/pagination/ui/pagination"
+
+import { Task } from "widgets/task"
+import { getTasksQuery } from "entities/task/api"
 
 import { Container } from "shared/ui/container"
 
 import styles from './tasks-list.module.css'
 
 
+
 export const TasksList = () => {
 
-    const tasks = useList($tasks, {
-        fn: ({id, text, completed}) => <Task text={text} id={id} completed={completed} key={id}/>,
-        placeholder: 'No tasks anymore',
-    })
+    const {data} = useUnit(getTasksQuery)
 
-
-    console.log();
-    
+    const condition =  data?.tasks && data.tasks.length > 0
 
     return (
         <div className={styles.tasks}>
             <Container>
-                <h1 className={styles.title}>My Tasks</h1>
+                <div>
+                    <h1 className={styles.title}>My Tasks</h1>
+                    <Pagination />
+                </div>
 
                 <div className={styles.list}>
-                    {tasks}
+                    {
+                        condition
+                        ? data.tasks.map(({id, text, completed}) => <Task text={text} id={id} completed={completed} key={id}/>)
+                        : 'No tasks anymore'
+                    }
                 </div>
             </Container>
         </div>

@@ -1,0 +1,1 @@
+export { PaginationSideButton } from "./pagination-side-button"

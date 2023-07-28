@@ -9,11 +9,11 @@ import styles from './edit-task-form.module.css'
 
 
 interface Props {
-
+    id: string
 }
 
 
-export const EditTaskForm = ({}: Props) => {
+export const EditTaskForm = ({id}: Props) => {
     const inputRef = useRef<HTMLInputElement>(null)
 
     function submitHandler(event: FormEvent) {
@@ -33,6 +33,3 @@ export const EditTaskForm = ({}: Props) => {
         </form>
     )
 }
-
-
-// Entity + Feature => Widget

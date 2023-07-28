@@ -25,7 +25,9 @@
     transition: .3s;
 }
 
-
-.btn:hover {
-    transform: translateY(-3px);
+@media(hover: hover) {
+    .btn:hover {
+        transform: translateY(-3px);
+    }
 }
+

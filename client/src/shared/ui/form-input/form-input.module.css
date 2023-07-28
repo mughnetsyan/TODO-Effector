@@ -6,6 +6,8 @@
 
     background: var(--turquoise);
 
+    transition: .3s;
+
     border-radius: 10px;
 
     font-style: normal;
@@ -19,4 +21,8 @@
 
 .input::placeholder {
     color: var(--violet-80);
+}
+
+.input:focus-visible {
+    background: var(--white);
 }

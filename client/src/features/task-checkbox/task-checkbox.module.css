@@ -2,10 +2,6 @@
     transition: .3s;
 }
 
-.item:hover {
-    transform: translateY(-3px);
-}
-
 .label {
     width: 48px;
     height: 48px;
@@ -46,4 +42,11 @@
 
 .checkbox:checked + label > .slider {
     opacity: 1;
+}
+
+
+@media(hover: hover) {
+    .item:hover {
+        transform: translateY(-3px);
+    }
 }
